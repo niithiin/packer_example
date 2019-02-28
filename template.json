@@ -1,0 +1,24 @@
+{
+"variables": {
+"aws_access_key": "AKIAITFQ4YH7MDBTFDSQ",
+"aws_secret_key": "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"
+},
+
+"builders": [{
+"type": "amazon-ebs",
+"access_key": "{{user `aws_access_key`}}",
+"secret_key": "{{user `aws_secret_key`}}",
+"region": "ap-south-1",
+"source_ami": "ami-0937dcc711d38ef3f",
+"instance_type": "t2.micro",
+"ssh_username": "ec2-user",
+"ami_name": "shanthanAMI-{{timestamp}}"
+}],
+
+"provisioners": [
+{
+"type": "shell",
+"script": "provision.sh"
+}
+]
+}
