@@ -1,3 +1,4 @@
+
 Usage: packer [--version] [--help] <command> [<args>]
 
 Available commands are:
