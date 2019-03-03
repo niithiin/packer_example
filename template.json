@@ -13,7 +13,7 @@
 "source_ami": "ami-0937dcc711d38ef3f",
 "instance_type": "t2.micro",
 "ssh_username": "ec2-user",
-"ami_name": "shanthanAMI-{{timestamp}}"
+"ami_name": "AMIname-{{timestamp}}"
 }],
 
 "provisioners": [
